@@ -42,18 +42,18 @@ if __name__ == "__main__":
                     print(f"La longitud de la cadena da: {obj.longitud(cad)}")
                 case 3:
                     print("\n -- Ver si esta vacia -- ")
-                    if obj.es_vacia() == False:
-                        print("La cadena esta vacia")
-                    else:
+                    if obj.es_vacia(cad) == False:
                         print("La cadena no esta vacia")
+                    else:
+                        print("La cadena si esta vacia")
                 case 4:
                     print("\n -- comparacion -- ")
                     cad1 = input("Ingrese la primera cadena: ")
                     cad2 = input("Ingrese la segundo cadena: ")
                     if obj.son_iguales == False:
-                        print("Las 2 cadenas no son iguales")
-                    else:
                         print("Las 2 cadenas son iguales")
+                    else:
+                        print("Las 2 cadenas no son iguales")
                 case 0:
                     print("Saliendo de las operaciones ... ")
                 case _:
