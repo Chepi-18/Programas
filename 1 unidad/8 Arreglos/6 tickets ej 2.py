@@ -1,0 +1,12 @@
+tickets = [105, 102, 108, 101]
+print(f"Estado inicial del ticket: {tickets}")
+tickets.insert(0, 999)
+print(f"Despues de resibir la emergencia: {tickets}")
+tickets.remove(108)
+print(f"Despues de canselar el ticket 108: {tickets}")
+tickets.sort(reverse=True)
+print(f"Cola ordenada por prioridad: {tickets}")
+print("--Atencion--")
+print(f"Atendiendo el ticket con ID: {tickets[0]}")
+tickets.pop(0)
+print(f"Cola pendiente actualizada: {tickets}")
