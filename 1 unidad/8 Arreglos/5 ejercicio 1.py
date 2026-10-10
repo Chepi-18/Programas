@@ -4,7 +4,6 @@ print(f"Introduce {Ntiempos} valores:")
 for i in range(Ntiempos):
     A[i] = int(input())
 Conteo = []
-moda = 0
 for i in range(len(A)):
     Conteo.append(A.count(A[i]))
 contador = max(Conteo)

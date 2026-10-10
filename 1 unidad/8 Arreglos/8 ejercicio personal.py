@@ -59,5 +59,5 @@ elif puntos1 > puntos2:
     )
 else:
     print(
-        f"El jugador 1 ganó por tener {sum(Jugador2) - sum(Jugador1)} puntos mas que el jugador 2 sin pasarse de 21"
+        f"El jugador 2 ganó por tener {sum(Jugador2) - sum(Jugador1)} puntos mas que el jugador 1 sin pasarse de 21"
     )
