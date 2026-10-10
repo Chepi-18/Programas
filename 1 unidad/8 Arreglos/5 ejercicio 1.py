@@ -7,7 +7,6 @@ Conteo = []
 moda = 0
 for i in range(len(A)):
     Conteo.append(A.count(A[i]))
-    print(f"EL valor {A[i]} esta {Conteo[i]}")
 contador = max(Conteo)
 posicion = Conteo.index(contador)
 
