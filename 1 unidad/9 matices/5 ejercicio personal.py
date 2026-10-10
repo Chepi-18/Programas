@@ -18,7 +18,6 @@ class BatallaMatrices:
             self.mat1.append(fila1)
             self.mat2.append(fila2)
 
-        # Copia exacta sin que sean "espejos"
         self.orig_mat1 = copy.deepcopy(self.mat1)
         self.orig_mat2 = copy.deepcopy(self.mat2)
 
