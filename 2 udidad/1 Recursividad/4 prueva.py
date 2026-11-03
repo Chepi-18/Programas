@@ -49,7 +49,7 @@ def listar_archivos_recursivamente(
 
 
 def main():
-    ruta_inicial = r"C:\Users\delga\Downloads"
+    ruta_inicial = r"C:\Users\delga\Pictures"
     print(f"Calculando elementos en: {ruta_inicial}...")
 
     if os.path.exists(ruta_inicial):

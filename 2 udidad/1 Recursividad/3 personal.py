@@ -3,7 +3,6 @@ import time
 import random
 
 
-# --- Funciones recursivas ---
 def maxComun_divisor(numero_1, numero_2):
     if numero_2 == 0:
         return numero_1
