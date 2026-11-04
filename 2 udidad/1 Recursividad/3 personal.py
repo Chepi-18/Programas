@@ -12,6 +12,7 @@ def maxComun_divisor(numero_1, numero_2):
 def minComun_multiplo(numero_1, numero_2):
     if numero_1 == 0 or numero_2 == 0:
         return 0
+    # el abs se usa para sacar el valor absoluto
     return abs(numero_1 * numero_2) // maxComun_divisor(numero_1, numero_2)
 
 
@@ -83,7 +84,7 @@ if __name__ == "__main__":
                         res_mcd = maxComun_divisor(num_a, num_b)
                         res_mcm = minComun_multiplo(num_a, num_b)
                         lista_de_resultados.append((num_a, num_b, res_mcd, res_mcm))
-                        time.sleep(0.002)
+                        time.sleep(0.012)
 
                     print(
                         f"\nProcesados {len(lista_de_resultados)} pares exitosamente."
