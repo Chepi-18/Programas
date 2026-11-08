@@ -1,0 +1,17 @@
+// Lista Ligada
+digraph {
+	rankdir=LR
+	node_0 [label="{ <info> info: 1 | <liga> liga }" shape=record]
+	node_1 [label="{ <info> info: 2 | <liga> liga }" shape=record]
+	node_0:liga -> node_1:info
+	node_2 [label="{ <info> info: 2 | <liga> liga }" shape=record]
+	node_1:liga -> node_2:info
+	node_3 [label="{ <info> info: 3 | <liga> liga }" shape=record]
+	node_2:liga -> node_3:info
+	node_4 [label="{ <info> info: 4 | <liga> liga }" shape=record]
+	node_3:liga -> node_4:info
+	node_5 [label="{ <info> info: 5 | <liga> liga }" shape=record]
+	node_4:liga -> node_5:info
+	null [label=NULL shape=ellipse]
+	node_5:liga -> null
+}
