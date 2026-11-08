@@ -19,6 +19,7 @@ if __name__ == "__main__":
         print("11: Eliminar nodo con información X")
         print("12: Busqueda de elemento")
         print("13: eliminar nodo antes de nodo X")
+        print("14: eliminar nodo despues de nodo X")
         print("0: Salir")
         try:
             op = int(input("\nElige una opcion: "))
