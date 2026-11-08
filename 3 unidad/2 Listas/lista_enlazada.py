@@ -239,7 +239,7 @@ class ListaEnlazada:
                         anterior = q
                         q = q.liga
                 anterior.liga = q.liga
-                print(f"El elemento antes de {referencia} eliminado con exito. ")
+                print(f"El elemento antes de {referencia} fue eliminado con exito. ")
         else:
             print(f"El elemento {referencia} no esta en la lista")
 
@@ -249,34 +249,22 @@ class ListaEnlazada:
             return
 
         q = self.p
-        t = None
         band = True
 
         if q is None:
             return  # Validación de seguridad
 
-        while q is not None and q.info != referencia and band:
-            if q.liga is not None:
-                t = q
-                q = q.liga
-                t = q.liga
-            else:
-                band = False
-        t = t
+        while q is not None and q.info != referencia:
+            q = q.liga
+        if q is None:
+            band = False
+
         if band:
             if q.liga == None:
                 print(f"No existe ningun nodo despues del ultimo ")
-            elif t.liga == None:
-                q.liga = None
-                print(f"El elemento despues de {referencia} eliminado con exito. ")
             else:
-                q = self.p
-                anterior = None
-                while q != t:
-                    if q.liga is not None:
-                        anterior = q
-                        q = q.liga
-                anterior.liga = q.liga
-                print(f"El elemento antes de {referencia} eliminado con exito. ")
+                t = q.liga
+                q.liga = t.liga
+                print(f"El elemento despues de {referencia} fue eliminado con exito. ")
         else:
             print(f"El elemento {referencia} no esta en la lista")
