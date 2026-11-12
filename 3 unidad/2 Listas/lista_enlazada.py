@@ -1,5 +1,4 @@
 from nodo import Nodo
-from graphviz import Digraph
 
 
 class ListaEnlazada:
