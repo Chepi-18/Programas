@@ -36,3 +36,69 @@ class Pila:
         while reco is not None:
             print(f"{reco.info} ")
             reco = reco.sig
+
+    def promedio(self):
+        """pues saca el promedio"""
+        if self.is_empty():
+            print("[Pila Vacía]")
+            return
+
+        contador = 0
+        suma = 0
+        q = self.tope
+        while q is not None:
+            contador += 1
+            suma += q.info
+            q = q.sig
+        print(f"El promedio es: {suma/contador}")
+
+    def tamaño(self):
+        if self.is_empty():
+            print("[Pila Vacía]")
+            return
+        contador = 0
+        q = self.tope
+        while q is not None:
+            contador += 1
+            q = q.sig
+        print(f"El tamaño de la pila es de: {contador}")
+
+    def busqueda(self, referencia):
+        if self.is_empty():
+            print("[Pila Vacía]")
+            return
+        q = self.tope
+        bandera = True
+        while q.info != referencia and bandera:
+            if q.sig is not None:
+                q = q.sig
+            else:
+                bandera = False
+
+        if bandera is False:
+            print("No se encontro coincidencia en la pila")
+        else:
+            print(f"El elemento {referencia} fue encontrado con exito en la pila")
+
+    def tope_sin_eliminar(self):
+        if self.is_empty():
+            print("[Pila Vacía]")
+            return
+        print(f"el tope de la pila es: {self.tope.info}")
+
+    def eliminar_pila(self):
+        if self.is_empty():
+            print("la pila ya esta vacia")
+            return
+        self.tope = None
+        print("pila eliminada con exito")
+
+    def Lectura_kamikase(self):
+        if self.is_empty():
+            print("[Pila Vacía]")
+            return
+        print("Los datos que estaban en la pila son: ")
+        while self.tope is not None:
+            print(self.tope.info)
+            self.tope = self.tope.sig
+        print("La lista quedo vacia")
